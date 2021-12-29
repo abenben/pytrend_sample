@@ -69,8 +69,8 @@ if __name__ == '__main__':
 
     # カテゴリ内容の表示
     pytrend = TrendReq(hl='ja-jp', tz=540)
-    pytrend.categories()
+    categories_df = pytrend.categories()
     print("*" * 80)
     print("* 結果表示（カテゴリ内容） *")
     print("*" * 80)
-    print(top_charts_df.head(n=10))
+    print(categories_df)
